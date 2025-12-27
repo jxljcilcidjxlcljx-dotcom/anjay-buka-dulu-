@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surat Lucu 🐻</title>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(#ffd6e8, #ffe9a8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Comic Sans MS", Arial, sans-serif;
+}
+
+#start {
+  text-align: center;
+  cursor: pointer;
+}
+
+.bear {
+  font-size: 100px;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+#letter {
+  display: none;
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  animation: pop 0.6s;
+}
+
+@keyframes pop {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.hearts {
+  font-size: 22px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="start">
+  <div class="bear">🐻</div>
+  <p><b>Klik aku dong 🐾</b></p>
+</div>
+
+<div id="letter">
+  <div class="hearts">💖 💖 💖</div>
+  <h2>Surat Lucu</h2>
+  <p>
+    awas aja nyari bocil/duda,  
+    tak makan nanti 😠🐻
+  </p>
+  <p>
+    — Beruang chibi pengawas kamu 🧸
+  </p>
+  <div class="hearts">💖 💖 💖</div>
+</div>
+
+<script>
+document.getElementById("start").onclick = function() {
+  document.getElementById("start").style.display = "none";
+  document.getElementById("letter").style.display = "block";
+};
+</script>
+
+</body>
+</html>
