@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surat Untuk Kamu</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#ffdde1, #ee9ca7);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#letter {
+  display: none;
+  background: white;
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  animation: fadeIn 1s;
+}
+
+#envelope {
+  cursor: pointer;
+  font-size: 80px;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: scale(0.9);}
+  to {opacity: 1; transform: scale(1);}
+}
+</style>
+</head>
+
+<body>
+
+<div id="envelope">📩</div>
+
+<div id="letter">
+  <h2>Hai 🎉</h2>
+  <p>
+    awas aja nyari bocil, tak makan nanti
+  </p>
+
+  <img src="https://i.imgur.com/4AiXzf8.jpeg" alt="Foto">
+
+  <p>
+    awas aja🫵
+  </p>
+</div>
+
+<script>
+document.getElementById("envelope").onclick = function() {
+  document.getElementById("envelope").style.display = "none";
+  document.getElementById("letter").style.display = "block";
+}
+</script>
+
+</body>
+</html>
